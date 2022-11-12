@@ -1,4 +1,6 @@
 #!/bin/bash
 
-
-mkdir -p volumes/postgres
+if [[ ! -d volumes/postgres ]];
+then
+    mkdir -p volumes/postgres
+fi
